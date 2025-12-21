@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE PROPOSE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+</head>
+<body>
+    <canvas id="heart"></canvas>
+    <div class="card">
+        <div id="create-screen">
+            <h2>Create Secret Proposal</h2>
+            <input type="text" id="recipent-name" placeholder="Enter her name">
+            <textarea id="secret-msg" maxlength="1000" placeholder="Write your feelings..."></textarea>
+            <button id="generate-btn">Generate Secret Link</button>
+            <div id="link-output"></div>
+        </div>
+        <div id="login-screen" class="hidden">
+            <h2>🔒 Locked Message </h2>
+            <p>Enter your name to unlock:</p>
+            <input type="text" name="" id="verify-name" placeholder="Your Name">
+            <button id="unlock-btn">Unlock Surprise</button>
+            <pre id="others-msg">This is not for You.
+                Please, Don't try to peek</pre>
+        </div>
+        <div id="msg-screen" class="hidden">
+            <h2>💌 Message for You!</h2>
+            <div id="msg-box"></div>
+            <button id="vid-btn">I have a video for You...</button>
+        </div>
+        <div id="video-screen" class="hidden">
+            <h2>🎥 Something For You</h2>
+            <div class="video">
+                <video controls>
+                    <source src="reelimp.mp4" type="video/mp4">
+                </video>
+            </div>
+             <button id="propose-btn">One last thing...</button>
+        </div>
+        <div id="propose-screen" class="hidden">
+            <h1 class="header">Will You....?</h1>
+            <div class="gif_container">
+                <img src="https://i.postimg.cc/pdNqPxx1/milk-and-mocha-cute.gif" alt="cute teddy">
+            </div>
+            <div class="buttons">
+                <button class="btn" id="yes-buttton">Yes</button>
+                <button class="btn" id="no-buttton">No</button>
+            </div>
+        </div>
+        <div id="success-screen" class="hidden">
+            <h1 class="header">Yeyyy! Finally ❤️</h1>
+            <div class="gif_container">
+                <img src="https://i.postimg.cc/wTDG30TB/yes.gif" alt="happy teddy">
+            </div>
+            <a href="https://wa.me/+918847886181?text=I%20said%20Yes!%20Let's%20fix%20a%20date." class="whatsapp-btn">Let's Fix a Date 📅</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
