@@ -206,3 +206,4 @@ yesBtn.addEventListener('click', () => {
     if (s === 'complete' || s === 'loaded' || s === 'interactive') init();
     else document.addEventListener('DOMContentLoaded', init, false);
 })();
+/* This project is made with gemini AI for better styling */
