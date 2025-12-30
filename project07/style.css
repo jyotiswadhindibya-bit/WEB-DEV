@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: helvetica;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: #111;
+}
+body::-webkit-scrollbar{display: none;}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+    position: relative;
+}
+.elem{
+    height: 200px;
+    width: 100%;
+    border-bottom: 2px solid white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+.elem h1{
+    font-size: 40px;
+    position: relative;
+    z-index: 1;
+    mix-blend-mode: difference;
+}
+.elem img{
+    height: 150px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: center;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: all linear 0.3s;
+}
